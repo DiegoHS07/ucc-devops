@@ -10,7 +10,8 @@ int areaCirculo(double radio) {
 	cout << "El radio del circulo es: " << radio << endl;
 	area = pow(radio, 2) * PI;
 	cout << "El area del ciculo es: " << area << endl;
-	cout << "Diego Alejandro Higuera Sierra" << endl;
+	double raiz = sqrt(area);
+	cout << "Su raíz cuadrada es: " << raiz << endl;
 	return 0;
 }
 
@@ -20,7 +21,8 @@ int areaTriangulo(double base, double altura) {
 	cout << "La altura del triangulo es: " << altura << endl;
 	area = (base * altura) / 2;
 	cout << "El area del triangulo es: " << area << endl;
-	cout << "Diego Alejandro Higuera Sierra" << endl;
+	double raiz = sqrt(area);
+	cout << "Su raíz cuadrada es: " << raiz << endl;
 	return 0;
 }
 
@@ -29,18 +31,28 @@ int areaCuadrado(double lado) {
 	cout << "El lado del cuadrado es: " << lado << endl;
 	area = lado * lado;
 	cout << "El area del cuadrado es: " << area << endl;
-	cout << "Diego Alejandro Higuera Sierra" << endl;
+	double raiz = sqrt(area);
+	cout << "Su raíz cuadrada es: " << raiz << endl;
 	return 0;
 }
 
 int main() {
-	cout << "*************** Calculadora de areas *************" << endl;
-	cout << "";
-	cout << "AREA DEL CIRCULO" << endl;
+	cout << "======================================" << endl;
+	cout << "======== Calculadora de areas ========" << endl;
+	cout << "======================================" << endl;
+	cout << "         AREA DEL CIRCULO" << endl;
+	cout << "======================================" << endl;
 	areaCirculo(8);
-	cout << "AREA DEL TRIANGULO" << endl;
+	cout << "======================================" << endl;
+	cout << "         AREA DEL TRIANGULO" << endl;
+	cout << "======================================" << endl;
 	areaTriangulo(2,6);
-	cout << "AREA DEL CUADRADO" << endl;
+	cout << "======================================" << endl;
+	cout << "         AREA DEL CUADRADO" << endl;
+	cout << "======================================" << endl;
 	areaCuadrado(12);
+	cout << "======================================" << endl;
+	cout << "    Diego Alejandro Higuera Sierra" << endl;
+	cout << "======================================" << endl;
 	return 0;
 }
